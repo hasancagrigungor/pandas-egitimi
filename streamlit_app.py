@@ -6,4 +6,5 @@ import streamlit as st
 
 
 
-st.write("ilk Sayfa")
+st.header("Türkçe Pandas Eğitimi")
+st.text("Bu eğitimi hazırlamamda yardımları dokunan Fırat Kurt , Emrah aktaş ve Daniel Amokachi'ye teşekkürü bir borç bilirim")
