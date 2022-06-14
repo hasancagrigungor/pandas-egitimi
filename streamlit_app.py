@@ -4,8 +4,8 @@ from passporteye import read_mrz
 import pytesseract
 
 picture = st.camera_input("")
-st.write(picture)
-if len(picture)>0:
+
+if picture!=None:
   mrz = read_mrz(picture)
   st.write(mrz)
 
