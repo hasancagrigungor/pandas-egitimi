@@ -1,10 +1,10 @@
-from collections import namedtuple
-import altair as alt
-import math
-import pandas as pd
+from PIL import Image
 import streamlit as st
+import pytesseract
+from passporteye.mrz.image import MRZPipeline
+from passporteye import read_mrz
 
+picture = st.camera_input("Çek çek çek")
+mrz = read_mrz(picture)
+st.write(mrz)
 
-
-st.header("Türkçe Pandas Eğitimi")
-st.text("Bu eğitimi hazırlamamda yardımları dokunan Fırat Kurt , Emrah aktaş ve Daniel Amokachi'ye teşekkürü bir borç bilirim")
