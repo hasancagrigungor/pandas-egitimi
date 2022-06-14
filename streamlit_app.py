@@ -1,6 +1,7 @@
 import streamlit as st
 from passporteye.mrz.image import MRZPipeline
 from passporteye import read_mrz
+import pytesseract
 
 picture = st.camera_input("Çek çek çek")
 mrz = read_mrz(picture)
