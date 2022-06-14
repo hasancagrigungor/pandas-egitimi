@@ -1,4 +1,3 @@
-from PIL import Image
 import streamlit as st
 from passporteye.mrz.image import MRZPipeline
 from passporteye import read_mrz
