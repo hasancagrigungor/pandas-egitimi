@@ -3,5 +3,5 @@ pandas
 streamlit
 passporteye
 pytesseract
-gh repo clone tesseract-ocr/tesseract
+
 
