@@ -375,7 +375,7 @@ if buton:
 
 
     xx=all_features(aciklama_features(aciklamatext),title_features(urun_baslik),kategori_features(kategori))
-    yaziliste=text_generator(xx)
+    yaziliste=text_generator(xx)[:7]
     random.shuffle(yaziliste)
 
     sonuc=spinle(" ".join(yaziliste))
