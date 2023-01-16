@@ -2,6 +2,7 @@ import streamlit as st
 from duckduckgo_search import ddg
 import requests
 import json
+import pandas as pd
 
 from duckduckgo_search import ddg
 
@@ -48,9 +49,33 @@ if buton:
                     if e['href'] not in liste2:
                         liste2.append(e['href'])
                         sozluk[w] = liste2
-
+    
+    df=pd.DataFrame()
+    df['domain']="";
+    df['url']="";
     for site in sozluk:
         st.title(site)
         listeler=sozluk[site]
+        
+        
+        
+        
         for ur in listeler:
             st.write(ur)
+            df.append({"domain":site,"url":ur},ignore_index=True)
+@st.experimental_memo
+def convert_df(df):
+   return df.to_csv(index=False).encode('utf-8')
+
+
+csv = convert_df(df)
+
+st.download_button(
+   "Press to Download",
+   csv,
+   "file.csv",
+   "text/csv",
+   key='download-csv'
+)
+            
+   
