@@ -2,7 +2,6 @@ import streamlit as st
 from duckduckgo_search import ddg
 import requests
 import json
-import pandas as pd
 
 from duckduckgo_search import ddg
 
@@ -49,18 +48,9 @@ if buton:
                     if e['href'] not in liste2:
                         liste2.append(e['href'])
                         sozluk[w] = liste2
-    
-    
+
     for site in sozluk:
         st.title(site)
         listeler=sozluk[site]
-        
-        
-        
-        
         for ur in listeler:
             st.write(ur)
-            
-
-
-   
