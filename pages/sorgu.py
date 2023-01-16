@@ -63,19 +63,19 @@ if buton:
         for ur in listeler:
             st.write(ur)
             df.append({"domain":site,"url":ur},ignore_index=True)
-@st.experimental_memo
-def convert_df(df):
-   return df.to_csv(index=False).encode('utf-8')
+    @st.experimental_memo
+    def convert_df(df):
+       return df.to_csv(index=False).encode('utf-8')
 
 
-csv = convert_df(df)
+    csv = convert_df(df)
 
-st.download_button(
-   "Press to Download",
-   csv,
-   "file.csv",
-   "text/csv",
-   key='download-csv'
-)
-            
+    st.download_button(
+       "Press to Download",
+       csv,
+       "file.csv",
+       "text/csv",
+       key='download-csv'
+    )
+
    
