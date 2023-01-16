@@ -63,9 +63,7 @@ if buton:
         for ur in listeler:
             st.write(ur)
             df.append({"domain":site,"url":ur},ignore_index=True)
- @st.experimental_memo
-
-
+@st.experimental_memo
 def convert_df(df):
      return df.to_csv(index=False).encode('utf-8')
 
