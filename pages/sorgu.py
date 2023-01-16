@@ -60,7 +60,7 @@ if buton:
         
         for ur in listeler:
             st.write(ur)
-            df.append({"domain":site,"url":ur},ignore_index=True)
+            
 
 
    
