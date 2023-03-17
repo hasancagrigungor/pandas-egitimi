@@ -1,8 +1,7 @@
-altair
 pandas
-streamlit
-passporteye
-pytesseract
-bs4
-duckduckgo_search
+numpy
+sqlite3
+pytrends
+urllib
+datetime
 
