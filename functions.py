@@ -99,7 +99,7 @@ def dbHaberEkle(link):
 
 def topluHaberEkle():
     sozluk = {
-        #"https://www.gazeteoku.com/export/newsmap": "",
+        "https://www.gazeteoku.com/export/newsmap": "",
         "https://www.haber24.com/sitemap-news.xml": "",
         "https://www.kamugundemi.com/export/newsmap": "",
         "https://www.gazeteciler.com/export/newsmap": "",
